@@ -1,6 +1,7 @@
 <?php
 
 namespace application\core;
+use application\core\View;
 
 class Router {
 
@@ -58,16 +59,17 @@ class Router {
         $controller = new $path($this->params);
         $controller->$action();
       } else {
-        echo "Action " .$action. " not found :(";
+        //echo "Action " .$action. " not found :(";
+        View::errorCode(404);
       }
 
     } else {
-      echo 'Controller '.$path.' not found :(';
-
+      //echo 'Controller '.$path.' not found :(';
+      View::errorCode(404);
     }
   } else {
-    echo 'Route not found :(';
+    //echo 'Route not found :(';
+    View::errorCode(404);
   }
-
   } 
 }

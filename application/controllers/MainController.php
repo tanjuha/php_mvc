@@ -7,10 +7,15 @@ use application\core\Controller;
 class MainController extends Controller {
 
   public function indexAction() {
-      echo "Main page";
+
+      $vars = [
+        'name' => 'Tom'
+      ];
+
+      $this->view->render("Main page", $vars);
   }
 
   public function contactAction() {
-    echo "Contact page";
+    $this->view->render("Contact");
 }
 }

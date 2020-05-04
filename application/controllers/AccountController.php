@@ -7,11 +7,12 @@ use application\core\Controller;
 class AccountController extends Controller {
 
   public function loginAction() {
-    echo "Page login";
+     //$this->view->redirect("/");
+    $this->view->render("Login page");
   }
 
   public function registerAction() {
-    echo "Page register";
+    $this->view->render("Register page");
    // var_dump($this->route);
   }
 }
