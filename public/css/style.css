@@ -1,0 +1,32 @@
+:root {
+  --width-sidemenu: 300px;
+  --main-color: #303f9f;
+}
+
+#wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+#content-wrapper {
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 1rem;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* form */
+.create-doc .form-group > label {
+  font-weight: bold;
+}
+/* form end*/
