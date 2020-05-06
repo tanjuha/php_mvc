@@ -5,9 +5,11 @@
   </b>
 </p>
 
-<?php foreach ($email as $val): ?>
-<p>
-<?php echo $val['email']; ?>
-</p>
-
-<?php endforeach; ?>
+<h5>List emails</h5>
+<ul>
+    <?php foreach ($email as $val): ?>
+      <li>
+        <?php echo $val['email']; ?>
+      </li>
+    <?php endforeach; ?>
+</ul>
